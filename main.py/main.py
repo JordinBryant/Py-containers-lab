@@ -47,15 +47,14 @@
 # print(cohort)
 
 # EXERCISE 7
-# awesome_students = []
+
+# awesome_students = [f'{student} is awesome' for student in students]
 # for student in students:
 #   awesome_students.append(f'{student} is awesome!')
-#   print(awesome_students)
+# print('ex 7 answer:',awesome_students)
 
 #EXCERCISE 8
 # a_foods =[]
 
-# if "a" in food:
-#   a_foods.append(foods)
-# for food in a_foods:
-#   print(a_foods)
+# a_words =[f'{food}' for food in foods if 'a' in food]
+# print('ex 8 answer:a_words)
