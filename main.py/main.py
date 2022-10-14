@@ -1,24 +1,18 @@
 # EXERCISE 1
-# students = ['Jordin','John','Asha']
+# students = ['Jordin','Josh','Asha']
 
-# John = students[1]
-# print(John)
-
-# Asha = students[2]
-# print(Asha)
+# print(students[1])
+# print(students[-1])
 
 # EXERCISE 2
-# foods = ('soup', 'chicken', 'noodles')
+# foods = ('soup', 'chicken', 'apple')
 
 # for food in foods:
-#   print('food string goes here is a good food')
+  # print(f"{food} is a good food")
 
 # EXERCISE 3
-
-# chicken = foods[1]
-# noodles = foods[2]
-# print(chicken)
-# print(noodles)
+# for food in foods[-2:]:
+  # print(food)
 
 # EXERCISE 4
 
@@ -27,8 +21,7 @@
 #   'state': 'Michigan',
 #   'population': '672,351'
 # }
-# for key, val in home_town.items():
-#   print("I was born in"  f"{key} = {val}" )
+# print( f"I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}")
 
 #EXERCISE 5
 # for key, val in home_town.items():
@@ -36,25 +29,18 @@
 
 #EXERCISE 6
 # cohort = []
-# # len (cohort)
-# cohort.append('student:')
-# cohort.append('jordin')
-# cohort.append('student:')
-# cohort.append('John')
-# cohort.append('student:')
-# cohort.append('Asha')
-
+# for idx, student in enumerate(students):
+#   cohort.append({'student': student,'fav_food': foods[idx]})
 # print(cohort)
+
 
 # EXERCISE 7
 
 # awesome_students = [f'{student} is awesome' for student in students]
-# for student in students:
-#   awesome_students.append(f'{student} is awesome!')
-# print('ex 7 answer:',awesome_students)
+# for student in awesome_students:
+  # print(student)
 
 #EXCERCISE 8
-# a_foods =[]
 
-# a_words =[f'{food}' for food in foods if 'a' in food]
-# print('ex 8 answer:a_words)
+# a_foods =[food for food in foods if 'a' in food]
+# print(a_foods)
